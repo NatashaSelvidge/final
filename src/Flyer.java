@@ -5,21 +5,21 @@
 //
 //Fly() – to indicate 1 minute of fly
 public class Flyer {
-	private int airSpeedMilesPerMinute;
+	private double airSpeedMilesPerMinute;
 	private int elevationPerMinute;
 	private int totalAltitude = 0;
-	private int totalDistance = 0;
+	private double totalDistance = 0;
 	
 	public Flyer(){
 		this.airSpeedMilesPerMinute = 0;
 		this.elevationPerMinute = 0;
 	}
 	public Flyer(int airSpeedMPH, int elevationPerMinute){
-		this.airSpeedMilesPerMinute = airSpeedMPH / 60;
+		this.airSpeedMilesPerMinute = (double)airSpeedMPH / 60;
 		this.elevationPerMinute = elevationPerMinute;
 	}
 	public void SetAirSpeed(int airSpeedMPH){
-		this.airSpeedMilesPerMinute = airSpeedMPH / 60;
+		this.airSpeedMilesPerMinute = (double)airSpeedMPH / 60;
 	}
 	public void SetAltimeter(int elevationPerMinute){
 		this.elevationPerMinute = elevationPerMinute;
